@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  c_vector:
+    command: sh -c "cd /home && gcc main.c Vector.c -o output && ./output"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - F:\Code\CVector\Source:/home
+
+    
